@@ -61,7 +61,7 @@ function BulkMailer() {
 
         try {
             const response = await axios.post(
-                "http://localhost:5005/sendemail",
+                "https://bulk-mail-app-react.onrender.com/sendemail",
                 {
                     sub: subject,
                     msg: message,
@@ -81,7 +81,7 @@ function BulkMailer() {
 
     const getHistory = async () => {
         const response = await axios.get(
-            "http://localhost:5005/history"
+            "https://bulk-mail-app-react.onrender.com/history"
         );
 
         setHistory(response.data);

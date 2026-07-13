@@ -11,7 +11,7 @@ function History() {
     const fetchHistory = async () => {
         try {
             const response = await axios.get(
-                "http://localhost:5005/history"
+                "https://bulk-mail-app-react.onrender.com/history"
             );
 
             setHistory(response.data);
