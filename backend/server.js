@@ -128,6 +128,8 @@ app.get("/history", async (req, res) => {
 
 
 
-app.listen(5005, () => {
-    console.log("Server started on port 5005");
+const PORT = process.env.PORT || 5000;
+
+app.listen(PORT, function () {
+    console.log(`Server started on port ${PORT}`);
 });
